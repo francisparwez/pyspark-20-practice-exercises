@@ -57,7 +57,7 @@ Focus: Advanced DataFrame transformations, aggregations, joins, and analytical o
 - **Programming Language:** Python
 - **Big Data Framework:** Apache Spark
 - **Python API:** PySpark
-- **Development Environment:** Jupyter Notebook
+- **Development Environment:** Visual Studio Code (Python scripts)
 - **Version Control:** Git & GitHub
 
 ## 📖 Learning Roadmap
@@ -78,6 +78,7 @@ The exercises follow a progressive learning path:
 ### Prerequisites
 
 - Python installed.
+- Java installed and configured for Apache Spark.
 - Basic understanding of Python programming.
 - Familiarity with Pandas and DataFrame operations is helpful.
 
@@ -144,7 +145,7 @@ pyspark-20-practice-exercises/
 
 ### Beginner Level
 
-- [ ] Q01 – Create Your First DataFrame
+- [x] Q01 – Create Your First DataFrame
 - [ ] Q02 – Select Specific Columns
 - [ ] Q03 – Filter Rows
 - [ ] Q04 – Create a New Column
@@ -167,6 +168,24 @@ pyspark-20-practice-exercises/
 - [ ] Q18 – Compare Current Row With Previous Row
 - [ ] Q19 – Customer Purchase Analysis
 - [ ] Q20 – Mini PySpark Data Engineering Challenge
+
+### Completed Exercise Details
+
+#### Q01 – Create Your First DataFrame
+
+**Objective:** Create a PySpark DataFrame, inspect its structure, display all records, and retrieve the first three rows.
+
+**Implementation:**
+
+- Initialized a SparkSession named `CustomersDataFrame` using `local[*]` for local execution.
+- Created a dataset containing five customer records with `id`, `name`, `age`, and `city` fields.
+- Defined the column names using a list and created the DataFrame with `createDataFrame()`.
+- Used `show()` to display all records.
+- Used `printSchema()` to inspect the DataFrame schema and inferred column data types.
+- Used `show(n=3)` to display the first three records.
+- Stopped the SparkSession using `spark.stop()` after completing the operations.
+
+**Key Functions:** `SparkSession.builder`, `createDataFrame()`, `show()`, `printSchema()`, `stop()`
 
 ## 🎯 Learning Approach
 
